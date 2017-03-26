@@ -1,9 +1,11 @@
-import Action.Action;
-import Action.Action1;
-import Reader.CSV_reader;
-import Reader.DataReader;
-import Reader.NLSV_reader;
-import Reader.TSV_reader;
+import action.Action;
+import action.Action1;
+import action.Action2;
+import action.Action3;
+import reader.CSV_reader;
+import reader.DataReader;
+import reader.NLSV_reader;
+import reader.TSV_reader;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -29,14 +31,20 @@ public class Client {
         switch (numberId){
             case 1: {
                 Action obj = new Action1();
-                System.out.println("Action 1: ");
+                System.out.println("action 1: ");
                 System.out.println("Sum numbers is: " + obj.doAction(dataReader.makeArray(FILEPATH + fileName)));
                 break;
             }
             case 2: {
                 Action obj = new Action2();
-                System.out.println("Action 2: ");
+                System.out.println("action 2: ");
                 System.out.println("Sum numbers is: " + obj.doAction(dataReader.makeArray(FILEPATH + fileName)));
+                break;
+            }
+            case 3: {
+                Action obj = new Action3();
+                System.out.println("action 3: ");
+                obj.doAction(dataReader.makeArray(FILEPATH + fileName));
                 break;
             }
         }

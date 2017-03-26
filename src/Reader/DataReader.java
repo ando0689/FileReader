@@ -1,6 +1,5 @@
-package Reader;
+package reader;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**

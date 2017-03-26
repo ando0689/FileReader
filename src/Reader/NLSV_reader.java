@@ -1,6 +1,5 @@
-package Reader;
+package reader;
 
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Scanner;
 

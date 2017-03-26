@@ -1,4 +1,4 @@
-package Action;
+package action;
 
 /**
  * Created by Taron on 03/25/17.
