@@ -11,11 +11,15 @@ public class CSV_reader extends DataReader {
     public int[] makeArray(String path) throws IOException {
         FileReader fileReader = new FileReader(path);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
+        
         String[] strings = bufferedReader.readLine().split(",");
+        
         int[] numbers = new int[strings.length];
-        for(int i = 0;i < strings.length;i++){
+        
+        for(int i = 0; i < strings.length; i++){
             numbers[i] = Integer.parseInt(strings[i]);
         }
+        
         return numbers;
     }
 }
